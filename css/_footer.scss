@@ -1,0 +1,39 @@
+footer {
+  width: 100%;
+  bottom: 0;
+  height: 195px;
+  position: absolute;
+}
+
+.footer-bar {
+  background: $dark;
+
+  & .footer-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    color: rgba(0, 0, 0, 0.39);
+  }
+}
+
+.footer-content {
+  background: rgb(247, 243, 243);
+  color: $grey;
+  height: 155px;
+}
+
+.footer-content-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-heading {
+  margin-bottom: 20px;
+}

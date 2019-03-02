@@ -1,0 +1,127 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 0;
+  @media only screen and (max-width: $break-med) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+  }
+}
+
+.nav {
+  position: relative;
+}
+
+.nav:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 2px;
+  background: $prime;
+  z-index: 10;
+}
+
+.nav-logo {
+  letter-spacing: .1em;
+  & span {
+    color: $prime;
+  }
+  @media only screen and (max-width: $break-med) {
+    letter-spacing: 0;
+    margin-bottom: 10px;
+  }
+  @media only screen and (max-width: $break-small) {
+    font-size: 1.2em;
+  }
+}
+
+.nav-right {
+  min-width: 400px;
+  @media only screen and (max-width: $break-small) {
+    min-width: 300px;
+  }
+}
+
+.nav-link {
+  margin-right: 10px;
+  @media only screen and (max-width: $break-small) {
+    margin-right: 10px;
+    font-size: .8em;
+  }
+}
+
+.nav-link.active {
+  color: rgba(0, 0, 0, 0.253);
+}
+
+.nav-btn {
+  border: 1px solid $prime;
+  color: $prime;
+  padding: 10px 20px;
+  border-radius: 20px;
+  @media only screen and (max-width: $break-med) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.header-container {
+  width: 100%;
+  height: 30vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.header-img {
+  width: 100%;
+  height: 100%;
+  
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.header-img-home {
+  background-image: url(../img/3.jpg);
+}
+
+.header-img-about {
+  background-image: url(../img/5.jpg);
+}
+
+.header-img-services {
+  background-image: url(../img/1.jpg);
+}
+
+.header-img-clients {
+  background-image: url(../img/2.jpg);
+}
+
+.header-img-contact {
+  background-image: url(../img/2.jpg);
+}
+
+.header-text {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  color: white;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.479);
+  z-index: 2;
+}
+
+.header-heading {
+  font-size: 4em;
+}
+
+.header-subheading {
+  font-size: 2em;
+}

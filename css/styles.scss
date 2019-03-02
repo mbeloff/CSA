@@ -1,0 +1,39 @@
+@import '_base.scss';
+@import '_nav.scss';
+@import '_gallery.scss';
+@import '_footer.scss';
+
+.content {
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+.content-heading {
+  margin-bottom: 1em;
+  font-weight: 400;
+
+}
+
+.content-subheading {
+  margin-bottom: .5em;
+  font-weight: 400;
+  color: $prime;
+}
+
+.content-grid {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+
+.grid-heading {
+  text-align: center;
+}
+
+.content-list {
+  list-style: none;  
+}
+
+.contact-info {
+  text-align: center;
+}
