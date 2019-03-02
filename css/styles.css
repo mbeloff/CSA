@@ -23,6 +23,9 @@ a {
   text-decoration: none;
   color: inherit; }
 
+.contact-link {
+  color: #fc6926; }
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -273,8 +276,24 @@ footer {
   text-align: center; }
 
 .content-list {
-  list-style: none; }
+  list-style: none;
+  line-height: 1.4em; }
+
+.content-list li {
+  position: relative; }
+
+.content-list li::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  background: #fc6926;
+  left: -20px;
+  top: 10px; }
 
 .contact-info {
-  text-align: center; }
+  text-align: center;
+  line-height: 2em;
+  font-weight: 600; }
 /*# sourceMappingURL=styles.css.map */

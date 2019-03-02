@@ -31,9 +31,28 @@
 }
 
 .content-list {
-  list-style: none;  
+  list-style: none;
+  line-height: 1.4em;  
+}
+
+.content-list {
+  li {
+    position: relative;
+  }
+  li::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 5px;
+    height: 1px;
+    background: $prime;
+    left: -20px;
+    top: 10px;
+  }
 }
 
 .contact-info {
   text-align: center;
+  line-height: 2em;
+  font-weight: 600;
 }
