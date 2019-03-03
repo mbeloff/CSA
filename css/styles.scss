@@ -3,9 +3,29 @@
 @import '_gallery.scss';
 @import '_footer.scss';
 
+.btn {
+  width: 150px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  border: 1px solid $prime;
+  background: $prime;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.247);
+  @media only screen and (max-width: $break-med) {
+    padding: 0;
+    border: none;
+  }
+}
+
 .content {
   margin-bottom: 50px;
   padding: 10px;
+}
+
+.content-p {
+  margin-bottom: 1em;
 }
 
 .content-heading {
@@ -26,6 +46,13 @@
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
 
+.risk-grid {
+  display: grid;
+  grid-gap: 1em;
+  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
 .grid-heading {
   text-align: center;
 }
@@ -33,11 +60,22 @@
 .content-list {
   list-style: none;
   line-height: 1.4em;  
+  columns: 2;
 }
 
-.content-list {
+.questions-list {
+  list-style: none;
+  line-height: 1.4em;
+}
+
+.content-list, .questions-list {
   li {
     position: relative;
+    font-weight: 600;
+    margin-bottom: 10px;
+    p {
+      font-weight: 400;
+    }
   }
   li::before {
     content: "";

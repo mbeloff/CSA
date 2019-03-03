@@ -24,7 +24,7 @@ a {
   color: inherit; }
 
 .contact-link {
-  color: #fc6926; }
+  color: #ff793b; }
 
 .container {
   width: 90%;
@@ -70,13 +70,13 @@ a {
   bottom: 10px;
   width: 100%;
   height: 2px;
-  background: #fc6926;
+  background: #ff793b;
   z-index: 10; }
 
 .nav-logo {
   letter-spacing: .1em; }
   .nav-logo span {
-    color: #fc6926; }
+    color: #ff793b; }
   @media only screen and (max-width: 768px) {
     .nav-logo {
       letter-spacing: 0;
@@ -102,10 +102,7 @@ a {
   color: rgba(0, 0, 0, 0.253); }
 
 .nav-btn {
-  border: 1px solid #fc6926;
-  color: #fc6926;
-  padding: 10px 20px;
-  border-radius: 20px; }
+  color: #ff793b; }
   @media only screen and (max-width: 768px) {
     .nav-btn {
       padding: 0;
@@ -252,9 +249,28 @@ footer {
 .footer-heading {
   margin-bottom: 20px; }
 
+.btn {
+  width: 150px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  border: 1px solid #ff793b;
+  background: #ff793b;
+  color: white;
+  padding: 10px 20px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.247);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.247); }
+  @media only screen and (max-width: 768px) {
+    .btn {
+      padding: 0;
+      border: none; } }
+
 .content {
   margin-bottom: 50px;
   padding: 10px; }
+
+.content-p {
+  margin-bottom: 1em; }
 
 .content-heading {
   margin-bottom: 1em;
@@ -263,7 +279,7 @@ footer {
 .content-subheading {
   margin-bottom: .5em;
   font-weight: 400;
-  color: #fc6926; }
+  color: #ff793b; }
 
 .content-grid {
   display: -ms-grid;
@@ -272,23 +288,41 @@ footer {
   -ms-grid-columns: (minmax(290px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); }
 
+.risk-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+  max-width: 1200px;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); }
+
 .grid-heading {
   text-align: center; }
 
 .content-list {
   list-style: none;
+  line-height: 1.4em;
+  -webkit-columns: 2;
+          columns: 2; }
+
+.questions-list {
+  list-style: none;
   line-height: 1.4em; }
 
-.content-list li {
-  position: relative; }
+.content-list li, .questions-list li {
+  position: relative;
+  font-weight: 600;
+  margin-bottom: 10px; }
+  .content-list li p, .questions-list li p {
+    font-weight: 400; }
 
-.content-list li::before {
+.content-list li::before, .questions-list li::before {
   content: "";
   display: inline-block;
   position: absolute;
   width: 5px;
   height: 1px;
-  background: #fc6926;
+  background: #ff793b;
   left: -20px;
   top: 10px; }
 
