@@ -1,5 +1,5 @@
-$font-1: 'Source Sans', sans-serif;
-$prime: #ff793b;
+$font-1: 'Lato', sans-serif;
+$prime: #ff933b;
 $dark: #49423f;
 $grey: #a39d99;
 $break-med: 768px;
@@ -38,6 +38,9 @@ a {
   margin: auto;
   height: 100%;
   min-height: 100%;
+  @media only screen and (max-width: $break-small){
+    width: 100%;
+  }
 }
 
 .page {

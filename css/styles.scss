@@ -4,19 +4,16 @@
 @import '_footer.scss';
 
 .btn {
-  width: 150px;
+  width: 180px;
   margin: auto;
   text-align: center;
+  text-transform: uppercase;
   display: block;
   border: 1px solid $prime;
   background: $prime;
   color: white;
   padding: 10px 20px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.247);
-  @media only screen and (max-width: $break-med) {
-    padding: 0;
-    border: none;
-  }
 }
 
 .content {
@@ -50,7 +47,10 @@
   display: grid;
   grid-gap: 1em;
   max-width: 1200px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: 1fr 1fr;
+  @media only screen and (max-width: $break-med){
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid-heading {
